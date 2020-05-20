@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import kr.co.yhw.a20200520_02_newjava.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
@@ -33,5 +33,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //    @Override
 //    public void onClick(View v) {
 //        Log.d("메인화면","자체이벤트 코드");
-    }
+//    }
 }
