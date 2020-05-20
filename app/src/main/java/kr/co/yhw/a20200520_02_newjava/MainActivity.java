@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import kr.co.yhw.a20200520_02_newjava.databinding.ActivityMainBinding;
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("적은내용", inputMessage);
 
                 binding.contentTxt.setText(inputMessage);
+
+                Toast.makeText(MainActivity.this, inputMessage+"문구를 반영했습니다 :D", Toast.LENGTH_SHORT).show();
             }
         });
 //        binding.okBtn.setOnClickListener(this);
