@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         binding.okBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("메인화면","확인버튼클릭");
+                String inputMessage = binding.contentEdt.getText().toString();
+                Log.d("적은내용", inputMessage);
+
+                binding.contentTxt.setText(inputMessage);
             }
         });
 //        binding.okBtn.setOnClickListener(this);
