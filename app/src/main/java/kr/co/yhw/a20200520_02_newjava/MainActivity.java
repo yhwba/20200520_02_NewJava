@@ -21,17 +21,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
 
-//        binding.okBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.d("메인화면","확인버튼클릭");
-//            }
-//        });
-        binding.okBtn.setOnClickListener(this);
+        binding.okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("메인화면","확인버튼클릭");
+            }
+        });
+//        binding.okBtn.setOnClickListener(this);
     }
 
-    @Override
-    public void onClick(View v) {
-        Log.d("메인화면","자체이벤트 코드");
+//    @Override
+//    public void onClick(View v) {
+//        Log.d("메인화면","자체이벤트 코드");
     }
 }
